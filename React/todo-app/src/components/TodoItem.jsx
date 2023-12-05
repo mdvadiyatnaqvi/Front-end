@@ -1,15 +1,13 @@
-import React from 'react'
-
-const TodoItem = () => {
+const TodoItem = ({ todoName, todoDate }) => {
     return (
-        <div className='item-con'>
-            <tr>
-                <td className='col col-5 text-item'>Go to College</td>
-                <td className='col col-5 text-item'>10/12/2020</td>
-                <td>
-                    <input className="btn btn-danger" type="button" value="Delete" />
-                </td>
-            </tr>
+        <div className="container">
+            <div className="row">
+                <div className="col-4">{todoName}</div>
+                <div className="col-4">{todoDate}</div>
+                <div className="col-4">
+                    <button type="button" className="btn btn-danger">Delete</button>
+                </div>
+            </div>
         </div>
     )
 }
