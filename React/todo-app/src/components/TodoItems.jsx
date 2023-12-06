@@ -5,7 +5,7 @@ const TodoItems = ({ todoItems }) => {
         <>
             <div className="item-container">
                 {todoItems.map(Item => (
-                    <TodoItem todoDate={Item.dueDate} todoName={Item.name}></TodoItem>
+                    <TodoItem key={Item.name} todoDate={Item.dueDate} todoName={Item.name}></TodoItem>
                 ))}
             </div>
         </>

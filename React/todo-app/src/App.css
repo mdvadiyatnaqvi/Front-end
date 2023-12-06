@@ -22,3 +22,7 @@ h1{
 .spec{
     margin: 0px 0px 5px 18px;
 }
+
+.container{
+    max-width: 542px !important;
+}
