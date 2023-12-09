@@ -1,6 +1,10 @@
+import styles from './Display.module.css';
+
 const Display = () => {
     return (
-        <div></div>
+        <center>
+            <input className={styles.display} placeholder='0'></input>
+        </center>
     )
 }
 
