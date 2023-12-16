@@ -1,0 +1,15 @@
+.main{
+    padding: 5px;
+    width:300px;
+}
+
+.items{
+    display: flex;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.btns{
+    margin-left: auto !important;
+    font-size: 15px
+}
