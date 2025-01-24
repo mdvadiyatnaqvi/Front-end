@@ -1,0 +1,51 @@
+.sticky-bottom-icons {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* height: 1000vh; */
+}
+
+.sticky-phone-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: transform 0.3s;
+}
+
+.sticky-phone-icon img,
+.sticky-whatsapp-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.sticky-phone-icon:hover {
+  transform: scale(1.1);
+}
+
+.sticky-whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  transition: transform 0.3s;
+}
+
+.sticky-whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .sticky-phone-icon img,
+  .sticky-whatsapp-icon img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-phone-icon img,
+  .sticky-whatsapp-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
