@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.bonus-box {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.bonus-box h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.bonus-box h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.btn-primary {
+    background: #d20b56;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.btn-primary:hover {
+    background: #b3094a;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-in a {
+    color: #d20b56;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.win-big {
+    font-size: 80px !important;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 650px) {
+    .win-big {
+        font-size: 70px !important;
+    }
+
+    .login-box {
+        margin-bottom: 50px;
+    }
+
+    .bonus-box {
+        margin-top: 300px;
+    }
+
+    .main {
+        background-image: url('../images/android.png') !important;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/* privacy css */
+
+.privacy {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.privacy a {
+    text-decoration: none;
+    color: black;
+}
