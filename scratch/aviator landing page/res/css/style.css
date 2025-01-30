@@ -5,7 +5,7 @@
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,13 +68,13 @@
 }
 
 .win-big {
-    font-size: 80px !important;
+    font-size: 50px !important;
     font-weight: 800;
 }
 
 @media only screen and (max-width: 650px) {
     .win-big {
-        font-size: 70px !important;
+        font-size: 35px !important;
     }
 
     .login-box {
@@ -90,6 +90,41 @@
         background-position: center center;
         background-size: cover;
     }
+
+    .strip {
+        text-align: center;
+    }
+
+    .strip img {
+
+        height: 50px !important;
+    }
+
+    .fixed-div {
+        position: fixed;
+        bottom: 1px;
+    }
+
+    .bonus-box img {
+        width: 200px !important;
+    }
+
+    .main-para {
+        font-size: 15px !important;
+    }
+
+    .login-box {
+        padding: 5px !important;
+    }
+
+    #request-otp {
+        margin: 0px !important;
+    }
+
+    .another-para {
+        font-size: 12px !important;
+    }
+
 }
 
 /* privacy css */
@@ -104,4 +139,34 @@
 .privacy a {
     text-decoration: none;
     color: black;
+}
+
+.strip {
+    background-color: black;
+}
+
+.strip img {
+    height: 50px;
+}
+
+.border-text {
+
+    font-size: 20px !important;
+    /* background-image: linear-gradient(#efff5a, #feb47b) !important; */
+    /* Gradient colors */
+    /* -webkit-background-clip: text !important; */
+    /* Clip the background to the text */
+    /* color: transparent !important; */
+    color: rgb(253, 253, 93) !important;
+
+    text-shadow:
+        1px 1px 0px black,
+        /* Top-right shadow */
+        -1px -1px 0px black,
+        /* Bottom-left shadow */
+        1px -1px 0px black,
+        /* Top-left shadow */
+        -1px 1px 0px black;
+    /* Bottom-right shadow */
+
 }
