@@ -1,0 +1,49 @@
+
+.section5{
+background-image: url("./res/images/Frame.png");
+}
+.testimonial-box {
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    /* background-color: transparent; */
+    background-color: #BD08095C;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+ 
+}
+.testimonial-box:hover {
+    transform: translateY(-10px);
+}
+.profile-img {
+    width: 120px;
+    height: 160px;
+    overflow: hidden;
+    margin-right: 15px;
+
+}
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.name-user strong {
+    font-size: 1.1rem;
+    color: #fff;
+}
+.testimonial-reviews {
+    color: #FFF032;
+    padding-bottom: 10px;
+}
+.testimonial-box p{
+  color: #fff;
+}
+.footer{
+  background-color: #7F0102;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto !important;
+}
+
+:root {
+  /* Primary Colors */
+  --green: #00A173;
+  --gray: #5F6368;
+  --grays: #C7C7C7;
+  --greyish: #303030;
+  --black: #000000;
+  --g-black: #282828;
+
+  /* Background Colors */
+  --bg-black: var(--g-black);
+
+  /* Font Sizes */
+  --font-size-xs: 19px;
+  --font-size-sm: 22px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 21px;
+  --font-size-xxl: 60px;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Trim Web Regular;
+  src: url("../font/Trim\ Web\ Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: ProductSans-Medium;
+  src: url("../font/ProductSans-Medium.ttf") format('truetype');
+}
+
+.pro-med {
+  font-family: ProductSans-Medium !important;
+}
+
+.trim-web {
+  font-family: Trim Web Regular !important;
+}
+
+.main {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.main h3 {
+  font-size: 40px !important;
+}
+
+.screen-width {
+  max-width: 1136px !important;
+}
+
+.font-26 {
+  font-size: var(--font-size-xl);
+}
+
+.font-20 {
+  font-size: var(--font-size-lg);
+}
+
+.font-14 {
+  font-size: var(--font-size-sm);
+}
+
+.font-12 {
+  font-size: var(--font-size-xs);
+}
+
+.font-22 {
+  font-size: 35px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.green {
+  color: var(--green);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.grays {
+  color: var(--grays);
+}
+
+.greyish {
+  color: var(--greyish);
+}
+
+.game-details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+hr.vertical {
+  width: 1px;
+  border: none;
+  background-color: #626262;
+  opacity: 1 !important;
+  margin: 0;
+}
+
+.install-btn {
+  background-color: #059669;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-style: italic;
+}
+
+.install-btn:hover {
+  background-color: #059669;
+  color: #fff;
+}
+
+  /* Shrink animation */
+  @keyframes shrinkEffect {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(0.93); } /* Shrinks vertically */
+    100% { transform: scaleY(1); } /* Returns to normal */
+}
+
+.shrink-animation {
+    animation: shrinkEffect 0.2s ease-in-out;
+}
+
+.btn-border-g {
+  background: none !important;
+  border: 1px solid #5F636859 !important;
+  padding: 5px 15px !important;
+  border-radius: 21px !important;
+}
+
+.btn-border-yn {
+  background: none !important;
+  border: 1px solid #5F636859 !important;
+  padding: 0px 15px !important;
+  border-radius: 21px !important;
+}
+
+.avatar-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background: #e6f3ef !important;
+  color: #056449 !important;
+}
+
+.progress-bar {
+  background-color: #059669 !important;
+}
+
+.border-footer-line {
+  border: 1px solid #5F636859;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.progress-btn {
+  position: relative;
+  width: 150px;
+  /* border: 1px solid #89dcc1b4; */
+  border: none;
+  color: white;
+  font-size: 16px;
+  background-color: #059669;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress-btn .progress-bar-i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #059669;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-btn span {
+  position: relative;
+  font-size: 20px;
+  z-index: 1;
+}
+
+@media (max-width: 699px) {
+  .game-details {
+    gap: 8px !important;
+    font-size: 16px !important;
+    margin-bottom: 12px;
+  }
+
+  .install-btn {
+    padding: 4px 0px !important;
+  }
+
+  .progress-btn span {
+    font-size: 14px !important;
+  }
+
+  .screen-width {
+    max-width: 315px !important;
+  }
+
+  .right {
+    margin-left: 20px !important;
+  }
+
+  .font-mob-12 {
+    font-size: 12px !important;
+  }
+
+  .main img {
+    width: 80px;
+  }
+
+  .main h3 {
+    font-size: 30px !important;
+  }
+
+  .font-22 {
+    font-size: 22px !important;
+  }
+
+  .font-14 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+}
+
+.my-btn {
+  border-radius: 25px;
+  padding: 12px 22px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  min-width: 300px;
+  background: linear-gradient(to bottom, #fceb50, #ff8c00);
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .. */
+
+
+/* Small devices (phones, 600px and below) */
+@media screen and (max-width: 600px) {
+  /* Your styles for small devices here */
+  .my-btn {
+    padding: 5px 5px;
+    bottom: 2%;
+    font-size: 10px !important;
+    min-width: 150px;
+  }
+  .main2-cols {
+    padding: 20px 10px 50px 10px !important;
+  }
+
+  .img1 {
+    width: 70px !important;
+    height: 130px !important;
+    margin-top: -150px !important;
+  }
+
+  .img2 {
+    width: 100px !important;
+    height: 20px !important;
+    margin-top: -20px !important;
+  }
+  .img3 {
+    height: 70px !important;
+    margin-top: -40px !important;
+  }
+
+  .images {
+    padding: 20px !important;
+  }
+
+  .images p {
+    font-size: 16px !important;
+  }
+}
+
+/* Medium devices (tablets, 601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Your styles for medium devices here */
+  .my-btn {
+    padding: 5px 15px !important;
+    bottom: 5% !important;
+    font-size: 14px !important;
+    min-width: 250px;
+  }
+  .main2-cols {
+    padding: 20px 10px 50px 10px !important;
+  }
+
+  .img1 {
+    width: 100px !important;
+    height: 150px !important;
+    margin-top: -150px !important;
+  }
+
+  .img2 {
+    width: 100px !important;
+    height: 20px !important;
+  }
+  .img3 {
+    height: 100px !important;
+    margin-top: -50px !important;
+  }
+
+  .images {
+    padding: 50px !important;
+  }
+}
+
+/* Large devices (desktops, 1025px and above) */
+@media screen and (min-width: 1025px) {
+  /* Your styles for large devices here */
+  .my-btn {
+    padding: 8px 22px !important;
+    bottom: 6% !important;
+    font-size: 16px !important;
+    min-width: 300px;
+  }
+}
